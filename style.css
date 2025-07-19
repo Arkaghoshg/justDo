@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #fddab7;
+}
+
+h1{
+    font-family: cursive;
+    color: #6F4E37;
+    font-size: 2.5rem;
+    text-align:center;
+}
+
+.inp{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    /* background-color: #541b4d; */
+}
+
+.txtbox {
+  padding: 10px;
+  margin: 12px;
+  height: 50 px;
+  width: 200px;
+  font-size: 16px;
+  border-radius: 18px;
+  font-family: cursive;
+ border: 2px solid #6F4E37;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+
+}
+
+button  {
+    margin: 12px;
+    /* padding: 5px 20px; */
+    background-color: #6F4E37;
+    color: white;
+    /* border: px solid #000000; */
+    border-radius: 18px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    height: 45px;
+    width: 150px;
+    font-family: cursive;
+}
+/* Checkbox Styling */
+
+.task-checkbox {
+    accent-color: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+    margin-left: 130px;
+    cursor: pointer;
+    transition: accent-color 0.2s ease;
+    background-color: transparent;
+}
+.list{
+    background-color: #f3ba81;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 8px;
+    background: #e6f5f6;
+}
+
+p{
+    font-family: cursive;
+    font-weight: bold;
+    color: #6F4E37;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+.list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: cursive;
+    font-weight: bold;
+    color: black;
+    padding: 12px 18px;
+    word-break: break-word;
+}
+/* Delete Button Styling */
+.delete {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 75px;
+    padding: 6px 14px;
+    background-color: #6F4E37;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+}
+
+.delete:hover {
+    background-color: #fff;
+    color: #6F4E37;
+    transform: scale(1.05);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.task-text {
+    max-width: 100px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+
